@@ -1,0 +1,20 @@
+.commonLevel(@color, @size) {
+  padding: 1rem;
+  background: @color;
+  font-size: @size;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.level_1 {
+  .commonLevel(#579391, 2rem);
+}
+
+.level_2 {
+  .commonLevel(#a034e9, 1.5rem);
+}
+
+.level_3 {
+  .commonLevel(#5097df, 1rem);
+}
