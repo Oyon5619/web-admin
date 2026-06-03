@@ -1,0 +1,12 @@
+export type PageName =
+  | "dashboard" // 主页
+  | "charts" // 图表统计
+  | "nestedMenu" // 嵌套菜单
+  | "nestedMenu1" // 子菜单1
+  | "nestedMenu1_1" // 子菜单1_1
+  | "nestedMenu1_2" // 子菜单1_2
+  | "nestedMenu2" // 子菜单2
+  | "nestedMenu2_1" // 子菜单2_1
+  | "nestedMenu3" // 子菜单3
+  | "fileZip" // 文件解压缩
+  | "richText"; // 富文本框

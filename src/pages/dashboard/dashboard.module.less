@@ -1,0 +1,39 @@
+.dataOverview {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+
+  .dataBox {
+    cursor: pointer;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    .dataIcon {
+      padding: 0.5rem;
+      border-radius: 0.8rem;
+      box-shadow: 0 0 0.5rem 0.2rem #efefefbb;
+    }
+
+    .dataDesc {
+      text-align: right;
+      margin-left: auto;
+
+      .dataTitle {
+        font-size: 1rem;
+      }
+      .dataValue {
+        color: #579391;
+        font-weight: bolder;
+        font-size: 1.4rem;
+      }
+    }
+
+    &:hover {
+      background: #efefeffe;
+    }
+  }
+}

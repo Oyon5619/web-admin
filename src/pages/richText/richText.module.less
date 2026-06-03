@@ -1,0 +1,87 @@
+.editorContent {
+  min-height: 200px;
+  outline: none;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1em 0 0.5em;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+
+  p {
+    margin: 0.5em 0;
+    line-height: 1.6;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  blockquote {
+    border-left: 3px solid #d9d9d9;
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    color: #666;
+  }
+
+  code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "Consolas", "Monaco", monospace;
+    font-size: 0.9em;
+    color: #d63200;
+  }
+
+  pre {
+    background: #282c34;
+    color: #abb2bf;
+    padding: 12px 16px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 0.5em 0;
+
+    code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+  }
+
+  a {
+    color: #1677ff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    margin: 1em 0;
+  }
+
+  /* placeholder for empty editor */
+  p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #adb5bd;
+    pointer-events: none;
+    height: 0;
+  }
+}
