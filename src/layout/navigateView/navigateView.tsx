@@ -7,6 +7,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { SLASH } from "@/constants/commonStrings";
 import { TagList } from "./tagList";
 import { useTagListStore } from "@/stores/useTagListStore";
+import { useThemeStore } from "@/stores/useThemeStore";
+import classNames from "classnames";
 
 interface NavigateViewProps {
   mode?: "breadCrumb" | "tagList";
@@ -78,5 +80,15 @@ export const NavigateView = ({
     );
   };
 
-  return <div className={styles.navigateViewBox}>{viewRender()}</div>;
+  const { isDarkMode } = useThemeStore();
+
+  return (
+    <div
+      className={classNames(styles.navigateViewBox, {
+        [styles.darkMode]: isDarkMode,
+      })}
+    >
+      {viewRender()}
+    </div>
+  );
 };
