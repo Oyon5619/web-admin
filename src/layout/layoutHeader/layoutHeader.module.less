@@ -1,8 +1,14 @@
 .layoutHeader {
   display: flex;
   background-color: #fff;
-  border-bottom: 1px solid #22ffdd;
+  border-bottom: 1px solid #e8e8e8;
   padding: 0 1rem;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &.darkMode {
+    background-color: #1f1f1f;
+    border-bottom-color: #303030;
+  }
 
   .logo {
     cursor: pointer;
